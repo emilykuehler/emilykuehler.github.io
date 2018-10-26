@@ -109,6 +109,6 @@ test_df = df[~msk]
 
 ## Why is it Naive? Why is it Bayes(ian)?
 
-The Naive Bayes Classifier is a supervised learning algorithm so given a set of datapoints {$${x^1,...x^m}$$} our goal is to predict the correct {$${y^1,...,y^m}$$}. However, unlike discriminative classifier such as logistic regressions or decision trees which directly estimate $$P(Y \mid X)$$ and create a decision boundaries to make predictions, the Naive Bayes Classifier is a __generative classifier__. It uses $$P(X\mid Y)$$ to then estimate $$P(Y \mid X)$$. And here is where good old Bayes Theorem helps you out.
+The Naive Bayes Classifier is a supervised learning algorithm so given a set of datapoints {$${x^1,...x^m}$$} our goal is to predict the correct {$${y^1,...,y^m}$$}. However, unlike discriminative classifier such as logistic regressions or decision trees which directly estimate \\(P(Y \mid X)\\)$ and create a decision boundaries to make predictions, the Naive Bayes Classifier is a __generative classifier__. It uses $$P(X\mid Y)$$ to then estimate $$P(Y \mid X)$$. And here is where good old Bayes Theorem helps you out.
 
 $$\displaystyle P(X\mid Y)={\frac {P(Y\mid X)P(X)}{P(Y)}}$$
