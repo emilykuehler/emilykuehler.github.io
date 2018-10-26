@@ -1,10 +1,3 @@
----
-layout:post
-title: "Naive Bayes From Scratch"
-description: "Coding the Naive Bayes Classifier in Python"
-mathjax: true
----
-
 # Coding the Naive Bayes Classifier From Scratch
 
 This post will walk through the basics of the Naive Bayes Classifier as well as show a python implementation of coding it from the ground up. While Naive Bayes is a fairly simple and straightforward algorithm, it has a number of real world use cases, including the canonical spam detection as well as sentiment analysis and weather detection. This post will walk through an example using [UCI's Banknote Authentication Dataset](https://archive.ics.uci.edu/ml/datasets/banknote+authentication "UCI ML Repo").
@@ -109,6 +102,6 @@ test_df = df[~msk]
 
 ## Why is it Naive? Why is it Bayes(ian)?
 
-The Naive Bayes Classifier is a supervised learning algorithm so given a set of datapoints {$latex{x^1,...x^m}$} our goal is to predict the correct {${y^1,...,y^m}$}. However, unlike discriminative classifier such as logistic regressions or decision trees which directly estimate \\(P(Y \mid X)\\)$ and create a decision boundaries to make predictions, the Naive Bayes Classifier is a __generative classifier__. It uses $$P(X\mid Y)$$ to then estimate $$P(Y \mid X)$$. And here is where good old Bayes Theorem helps you out.
+The Naive Bayes Classifier is a supervised learning algorithm so given a set of datapoints {$${x^1,...x^m}$$} our goal is to predict the correct $${y^1,...,y^m}$$. However, unlike discriminative classifier such as logistic regressions or decision trees which directly estimate $$P(Y \mid X)$$ and create a decision boundaries to make predictions, the Naive Bayes Classifier is a __generative classifier__. It uses $$P(X\mid Y)$$ to then estimate $$P(Y \mid X)$$. And here is where good old Bayes Theorem helps you out.
 
 $$\displaystyle P(X\mid Y)={\frac {P(Y\mid X)P(X)}{P(Y)}}$$
