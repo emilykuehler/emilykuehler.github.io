@@ -1,3 +1,10 @@
+---
+layout:post
+title: "Naive Bayes From Scratch"
+description: "Coding the Naive Bayes Classifier in Python"
+mathjax: true
+---
+
 # Coding the Naive Bayes Classifier From Scratch
 
 This post will walk through the basics of the Naive Bayes Classifier as well as show a python implementation of coding it from the ground up. While Naive Bayes is a fairly simple and straightforward algorithm, it has a number of real world use cases, including the canonical spam detection as well as sentiment analysis and weather detection. This post will walk through an example using [UCI's Banknote Authentication Dataset](https://archive.ics.uci.edu/ml/datasets/banknote+authentication "UCI ML Repo").
