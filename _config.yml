@@ -23,7 +23,7 @@ description: Home
 
 # List of links in the navigation bar
 navbar-links:
-  Blog: "blog"
+  Blog: "index"
   Data Viz:
     - SF311: "https://emilykuehler.shinyapps.io/sf311-response-app/"
   About Me: "aboutme"
