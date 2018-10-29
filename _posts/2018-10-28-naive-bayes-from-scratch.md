@@ -111,7 +111,7 @@ test_df = df[~msk]
 
 ## Why is it Naive? Why is it Bayes(ian)?
 
-The Naive Bayes Classifier is a supervised learning algorithm so given a set of datapoints {${x^1,...x^m}$} our goal is to predict the correct {${y^1,...,y^m}$}. However, unlike discriminative classifier such as logistic regressions or decision trees which directly estimate $P(Y\mid X)$ and create a decision boundaries to make predictions, the Naive Bayes Classifier is a __generative classifier__. It uses $P(X\mid Y)$ to then estimate $P(Y\mid X)$. And here is where good old Bayes Theorem (below) helps you out.
+The Naive Bayes Classifier is a supervised learning algorithm so given a set of datapoints {$${x^1,...x^m}$$} our goal is to predict the correct {$${y^1,...,y^m}$$}. However, unlike discriminative classifier such as logistic regressions or decision trees which directly estimate $$P(Y\mid X)$$ and create a decision boundaries to make predictions, the Naive Bayes Classifier is a __generative classifier__. It uses $$P(X\mid Y)$$ to then estimate $$P(Y\mid X)$$. And here is where good old Bayes Theorem (below) helps you out.
 
 $$\displaystyle P(X\mid Y)={\frac {P(Y\mid X)P(X)}{P(Y)}}$$
 
@@ -126,8 +126,8 @@ For many cases, the denominator (aka the marginal probability) is impossible or 
 $$\displaystyle prediction \leftarrow \underset{C_i}{\operatorname{argmax}} P(C_i \mid f_1,f_2...,f_n)$$
 
 Where:
-+ $C_i$ represents the ith class
-+ $f_n$ represents the nth feature vector
++ $$C_i$$ represents the ith class
++ $$f_n$$ represents the nth feature vector
 
 So here is where our "naive" assumption comes in. We assume independence between features, which allows us to calculate the conditional probability simply as the product of the individual probabilities of each feature:
 
@@ -144,11 +144,11 @@ With the example, we can see clearly how the marginal probability cancels. But h
 
 $$p(x) = \frac{1}{\sqrt{2\pi \sigma^2}} exp(-\frac{(x-\mu)^2}{2\sigma^2})$$
 
-So to calculate $P(imgEntropy\mid forged)$ we would plug in the following:
+So to calculate $$P(imgEntropy\mid forged)$$ we would plug in the following:
 
 $$P(imgEntropy\mid forged) = \frac{1}{\sqrt{2\pi * variance(imgEntropyInForgedData)}} exp(-\frac{(x-mean(imgEntropyInForgedData)}{2*variance(imgEntropyInForgedData)})$$
 
-Where $x$ is the value of an individual observation.
+Where $$x$$ is the value of an individual observation.
 
 So now we have all background we need write our code.
 
