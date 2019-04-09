@@ -188,6 +188,7 @@ exclude:
   - README.md
   - Vagrantfile
   - "*.Rmd"
+  - .Rhistory
 
 # prose.io config
 prose:
