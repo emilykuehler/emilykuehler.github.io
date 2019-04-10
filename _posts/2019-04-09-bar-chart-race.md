@@ -8,9 +8,9 @@ output: jekyllthat::jekylldown
 excerpt_separator: <!--more-->
 ---
 
-![Alt Text](~/Desktop/tidytuesday/grand-slam-tennis/barplot_race.gif)
+![Alt Text](/img/barplot_race.gif)
 
 Grand Slam Tennis Bar Chart Race
 --------------------------------
 
-This week's Tidy Tuesday dataset contained data about tennis
+This week's Tidy Tuesday dataset contained data about Grand Slam Tennis Tournaments during the Open Era. The Financial Times had
