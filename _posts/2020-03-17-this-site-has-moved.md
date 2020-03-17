@@ -8,4 +8,4 @@ output: jekyllthat::jekylldown
 excerpt_separator: <!--more-->
 ---
 
-Thanks for visiting! This site is no longer being updated. Please visit [here](https://www.emilykuehler.com/)
+Thanks for visiting! This site is no longer being updated. Please take a look at my  [new site](https://www.emilykuehler.com/)
